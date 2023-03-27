@@ -1,0 +1,34 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+const database = 'rentalfilm';
+
+// Create a new database.
+use(database);
+
+// Create a new collection.
+// db.createCollection("Category");
+// db.createCollection("Film_Category");
+// db.createCollection("Film");
+// db.createCollection("Language");
+// db.createCollection("Film_Actor");
+// db.createCollection("Inventory");
+// db.createCollection("Rental");
+// db.createCollection("Payment");
+// db.createCollection("Staff");
+// db.createCollection("Actor");
+// db.createCollection("Customer");
+// db.createCollection("Address");
+// db.createCollection("City");
+// db.createCollection("Country");
+// db.createCollection("Store");
+
+// insert collection for category
+// db.Category.insertMany([
+//     {Name: "Drama", Last_Update: ISODate()},
+//     {Name: "Adventure", Last_Update: ISODate()},
+//     {Name: "Slice of life", Last_Update: ISODate()}
+// ])
+
+// insert collection for film_category
+db.Category.insertMany([{FilmID: 001, CategoryID: 01, Last_Update: ISODate()},{FilmID: 002, CategoryID: 03, Last_Update: ISODate()},{FilmID: 003, CategoryID: 04, Last_Update: ISODate()}])
